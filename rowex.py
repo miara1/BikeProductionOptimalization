@@ -24,11 +24,11 @@ problem += dz16 + dz20 >= 150 # conajmniej 150 rowerow dziewczecych
 problem += p + s == 20 # 20 pracownikow łącznie
 
 # calkowity czas produkcji rowerow musi byc mniejszy 
-# niz 1200 minut na kazdego pracownika (5 dni po 8 godzin)
+# niz 2400 minut na kazdego pracownika (5 dni po 8 godzin)
 problem += 25 * ch16 + 28 * ch20 + 24 * dz16 + 29 * dz20 <= 2400 * p
 
 # calkowity czas skladania rowerow musi byc mniejszy 
-# niz 1200 minut na kazdego pracownika (5 dni po 8 godzin)
+# niz 2400 minut na kazdego pracownika (5 dni po 8 godzin)
 problem += 16 * ch16 + 18 * ch20 + 25 * dz16 + 32 * dz20 <= 2400 * s
 
 # rozwiazanie problemu
